@@ -1,0 +1,38 @@
+/* Global hidden class, used to hide album pane initially */
+.hidden{
+  display:none;
+}
+html,body{
+  position: relative;
+  width:100%;
+  height:100vh;
+}
+
+/* CSS to limit the photo titles, show ellipsis if title is too long */
+.photo-wrapper>span{
+  /* width:20px; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+  overflow: hidden
+}
+.like-btn{
+  width:15px;
+}
+
+/* CSS for popup modal and its content */
+.modal{
+  max-height:100%;
+}
+
+.modal-wrapper{
+  /* center all the contents inside the modal div */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-wrapper > h1{
+  font-size:32px;
+}

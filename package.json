@@ -1,0 +1,28 @@
+{
+  "name": "dev-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "back-end/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon back-end/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cordant/dev-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cordant/dev-challenge/issues"
+  },
+  "homepage": "https://github.com/Cordant/dev-challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node-fetch": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  }
+}
