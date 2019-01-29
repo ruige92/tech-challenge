@@ -8,17 +8,43 @@ html,body{
   height:100vh;
 }
 
+/* CSS for container padding */
+.container{
+  padding:50px 0px;
+}
+/* CSS for name label  */
+#user-name{
+  font-size:16px;
+  text-align: center;
+  width:100%;
+}
 /* CSS to limit the photo titles, show ellipsis if title is too long */
+.photo-wrapper{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:10px;
+}
 .photo-wrapper>span{
   /* width:20px; */
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 100%;
+  width: 80%;
   display: block;
-  overflow: hidden
+  overflow: hidden;
+  text-align:center;
 }
+/* CSS for the like and unlike button */
 .like-btn{
   width:15px;
+  cursor:pointer
+}
+/* CSS for like frames */
+.like-frame{
+  -webkit-box-shadow:0px 0px 0px 3px #d75a4a;
+  -moz-box-shadow:0px 0px 0px 3px #d75a4a;
+  box-shadow:0px 0px 0px 3px #d75a4a;
 }
 
 /* CSS for popup modal and its content */
@@ -35,4 +61,12 @@ html,body{
 }
 .modal-wrapper > h1{
   font-size:32px;
+}
+.modal-wrapper > span{
+  display:flex;
+  align-items: center;
+}
+.modal-wrapper > span > img{
+  height:30px;
+  margin:10px;
 }
